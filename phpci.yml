@@ -17,22 +17,13 @@ setup:
         action: "install"
 
 test:
-    php_unit:
-        config:
-            - "PHPUnit-all.xml"
-            - "PHPUnit-ubuntu-fix.xml"
-        directory:
-            - "tests/"
-        run_from: "phpunit/"
-        coverage: "tests/logs/coverage"
     php_mess_detector:
         allow_failures: true
+        zero_config: true
     php_code_sniffer:
-        standard: "PSR2"
-    php_cpd:
-        allow_failures: true
-    grunt:
-        task: "build"
+        path: "app"
+        ignore: "app/views"
+        standard: "PSR1,PSR2"
 
 complete:
     mysql:
