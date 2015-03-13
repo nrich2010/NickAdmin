@@ -21,7 +21,7 @@ test:
         path: "app"
         ignore:
             - "app/views"
-        standard: "PSR2"
+        standard: "PSR1"
 
 complete:
     mysql:
