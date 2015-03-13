@@ -19,10 +19,10 @@ setup:
 test:
     php_mess_detector:
         allow_failures: true
-        zero_config: true
     php_code_sniffer:
         path: "app"
-        ignore: "app/views"
+        ignore:
+            - "app/views"
         standard: "PSR2"
 
 complete:
