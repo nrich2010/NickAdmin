@@ -23,7 +23,7 @@ test:
     php_code_sniffer:
         path: "app"
         ignore: "app/views"
-        standard: "PSR1,PSR2"
+        standard: "PSR2"
 
 complete:
     mysql:
