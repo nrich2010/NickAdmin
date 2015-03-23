@@ -25,6 +25,8 @@ test:
     php_unit:
         config:
             - "phpunit.xml"
+    php_cs_fixer:
+        level: "all"
 
 complete:
     mysql:
