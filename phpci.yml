@@ -22,6 +22,9 @@ test:
         ignore:
             - "app/views"
         standard: "PSR1"
+    php_unit:
+        config:
+            - "phpunit.xml"
 
 complete:
     mysql:

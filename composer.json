@@ -19,7 +19,9 @@
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+		"phpspec/phpspec": "~2.1",
+        "phpmd/phpmd" : "@stable",
+      "phpunit/phpunit-selenium": ">=1.2"
 	},
 	"autoload": {
 		"classmap": [

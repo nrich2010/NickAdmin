@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use App\Person;
 
 class DatabaseSeeder extends Seeder {
 
@@ -14,7 +15,18 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('UserTableSeeder');
+		$this->call('PeopleTableSeeder');
 	}
+
+}
+
+class PeopleTableSeeder extends Seeder {
+
+    public function run()
+    {
+        DB::table('people')->delete();
+
+        //Person::create(['name' => 'Nick', 'description' => 'There is one']);
+    }
 
 }
