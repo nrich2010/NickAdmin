@@ -25,8 +25,12 @@ test:
     php_unit:
         config:
             - "phpunit.xml"
-    php_cs_fixer:
-        level: "all"
+    php_mess_detector:
+        rules:
+            - "codesize"
+            - "unusedcode"
+        allow_failures: true
+        zero_config: true
 
 complete:
     mysql:
