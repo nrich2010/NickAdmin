@@ -31,7 +31,6 @@ test:
             - "unusedcode"
         allow_failures: true
         zero_config: true
-    technical_debt:
     lint:
 
 complete:
