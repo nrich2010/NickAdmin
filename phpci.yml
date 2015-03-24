@@ -31,7 +31,11 @@ test:
             - "unusedcode"
         allow_failures: true
         zero_config: true
+    technical_debt:
+    lint:
 
 complete:
     mysql:
         - "DROP DATABASE IF EXISTS test;"
+    email:
+            default_mailto_address: nrich@amfam.com
