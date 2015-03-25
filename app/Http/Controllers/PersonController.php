@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Person;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Blade;
 
@@ -48,6 +49,7 @@ class PersonController extends Controller {
 	public function show($id)
 	{
 		//
+        Person::find($id);
 	}
 
 	/**
@@ -59,6 +61,7 @@ class PersonController extends Controller {
 	public function edit($id)
 	{
 		//
+        Person::find($id);
 	}
 
 	/**
@@ -70,6 +73,7 @@ class PersonController extends Controller {
 	public function update($id)
 	{
 		//
+        Person::find($id);
 	}
 
 	/**
@@ -81,6 +85,7 @@ class PersonController extends Controller {
 	public function destroy($id)
 	{
 		//
+        Person::find($id);
 	}
 
 }

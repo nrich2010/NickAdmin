@@ -21,7 +21,7 @@ test:
         path: "app"
         ignore:
             - "app/views"
-        standard: "PSR1"
+        standard: "Squiz"
     php_unit:
         config:
             - "phpunit.xml"
